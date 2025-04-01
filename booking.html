@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section style="padding: 6rem 2rem 2rem; max-width: 600px; margin: 0 auto;">
+    <h1>Book Your Event</h1>
+    <form onsubmit="return validateBooking()">
+      <label>Event Type:
+        <select id="event-type" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;">
+          <option>Wedding</option>
+          <option>Party</option>
+          <option>Corporate</option>
+        </select>
+      </label>
+      <label>Name: <input type="text" id="name" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;"></label>
+      <label>Email: <input type="email" id="email" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;"></label>
+      <label>Date: <input type="date" id="date" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;"></label>
+      <label>Location: <input type="text" id="location" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;"></label>
+      <label>Guests: <input type="number" id="guests" min="1" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;"></label>
+      <label>Requests: <textarea id="requests" style="width: 100%; padding: 0.5rem; margin: 0.5rem 0;"></textarea></label>
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Event Planner</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
