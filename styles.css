@@ -68,6 +68,7 @@ footer {
   text-align: center;
   background: url('images/featured.jpg') center/cover;
   color: white;
+  height:300px
 }
 
 .featured-event h1 {
